@@ -3,55 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Nguyen Bao Anh - Portfolio</title>
+    <title>Le Nguyen Bao Anh | Portfolio</title>
+    <meta name="description" content="Portfolio of Le Nguyen Bao Anh - WPF & Web Developer">
+    <link rel="stylesheet" href="Css/Style.css">
 </head>
 <body>
-    <header>
-        <h1>Hi, I'm Le Nguyen Bao Anh</h1>
-        <p>WPF Developer | Web Developer | C#, ASP.NET, JavaScript, PHP</p>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#paper">Paper</a></li>
-        </ul>
-    </nav>
+<header class="hero">
+    <h1>Hi, I'm Le Nguyen Bao Anh</h1>
+    <p class="subtitle">WPF Developer | Web Developer | C#, .NET, ASP.NET, JavaScript, PHP</p>
+</header>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a passionate developer with experience in various programming languages and frameworks. I enjoy creating efficient and user-friendly applications.</p>
-        </section>
+<nav class="navbar">
+    <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-        <hr> <section id="projects">
-            <h2>Projects</h2>
+<main class="container">
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a WPF Developer with over a year of professional experience, skilled in learning and adapting quickly to new
+            technologies. I possess strong leadership abilities, analytical thinking, and problem-solving skills. My current goal
+            is to expand my expertise and grow into a Full Stack Developer, continuously improving both my technical and
+            professional capabilities.
+        </p>
+    </section>
+    <section id="experience">
+        <section class="experience-item"></section>
+            <h2>Work Experience</h2>
+            <strong class="experience-title"><u>C# / WPF Developer</u></strong>
+            <p><u>Vietsens Technology Group Joint Stock Company</u> - (07/2025 – Present)</p>
+            <strong>Project: Electronic Medical Record (EMR)</strong>
             <ul>
-                <li><strong>Project A:</strong> Hello World</li>
-                <li><strong>Project B:</strong> Hello World</li>
+                <li>Worked in development of a desktop application using WPF</li>
+                <li>Worked in development of DLLs using C# on .NET Framework</li>
+                <li>Continual improvement of the software development lifecycle and product quality</li>
+                <li>Developed user-friendly interfaces using XAML and MVVM pattern</li>
+                <li>Worked with Binding, Styles, Control Templates, Routed Events, and Converters</li>
+                <li>Performed UI revamping of existing software</li>
+                <li>Developed effective, simple, readable, and maintainable backend logic</li>
+                <li>Experienced in LINQ, threading, serialization, events, and Entity Framework</li>
             </ul>
+            <p>
+                <strong>Tech Stack:</strong>
+                C#, .NET Framework, WPF, XAML, Oracle Database
+            </p>
         </section>
+        <section class="experience-item">
+            <strong class="experience-title"><u>Intern .NET Developer</u></strong>
+            <p><u>IVS Joint Stock Company</u> - (04/2024 – 07/2024)</p>
+            <strong>Project: Smart Factory</strong>
+            <ul>
+                <li>Managed a team of 7 interns, including task assignment, progress monitoring, and team support</li>
+                <li>Identified and fixed bugs to improve system stability</li>
+                <li>Developed and maintained CRUD features using C#, DevExpress, and PostgreSQL</li>
+            </ul>
 
-        <hr>
-
-        <section id="experience">
-            <h2>Experience</h2>
-            <p><strong>Hello World</strong> (2020 - Present)</p>
-            <p>Hello World</p>
+            <strong>Project: Human Resource Management</strong>
+            <ul>
+                <li>Tested and validated web interface functionality to ensure usability and visual consistency</li>
+                <li>Participated in software testing and test documentation</li>
+                <li>Developed assigned features using C#, .NET, and PostgreSQL</li>
+            </ul>
+            <p>
+                <strong>Tech Stack:</strong>
+                C#, ASP.NET, HTML/CSS, JavaScript, PostgreSQL
+            </p>
         </section>
-
-        <hr>
-
-        <section id="paper">
-            <h2>Paper</h2>
-            <p>Hello World</p>
+        <section class="experience-item">
+            <strong class="experience-title"><u>Intern Web-Backend Developer</u></strong>
+            <p><u>Vietnam Posts and Telecommunications Group (VNPT)</u> - (05/2023 – 07/2023)</p>
+            <p>Project: Contract Management</p>
+            <ul>
+                <li>Contributed to the development of the Contract Management module, an open-source project</li>
+                <li>Developed interface and functionality for the Customer Type category using MVC pattern</li>
+                <li>Designed user-friendly interfaces using HTML, CSS, and JavaScript</li>
+                <li>Implemented CRUD functionality for the Customer Type category using Laravel (PHP) and JavaScript</li>
+                <li>Tested and debugged the project, and supported team members to complete tasks on schedule</li>
+            </ul>
+            <p>
+                <strong>Tech Stack:</strong>
+                PHP (Laravel), MySQL, HTML/CSS, JavaScript
+            </p>
         </section>
-    </main>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 Le Nguyen Bao Anh. All rights reserved.</p>
-    </footer>
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skill-group">
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>C#</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </div>
+
+        <div class="skill-group">
+            <h3>Frontend Development</h3>
+            <ul>
+                <li>WPF (XAML UI Development)</li>
+                <li>MVVM Pattern</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+            </ul>
+        </div>
+
+        <div class="skill-group">
+            <h3>Backend & Frameworks</h3>
+            <ul>
+                <li>.NET / .NET Core</li>
+                <li>ASP.NET</li>
+                <li>ASP.NET Web API</li>
+                <li>Laravel (PHP)</li>
+            </ul>
+        </div>
+
+        <div class="skill-group">
+            <h3>Databases</h3>
+            <ul>
+                <li>MySQL</li>
+                <li>Oracle</li>
+                <li>PostgreSQL</li>
+                <li>Microsoft SQL</li>
+            </ul>
+        </div>
+
+        <div class="skill-group">
+            <h3>Other Technologies</h3>
+            <ul>
+                <li>Git</li>
+                <li>Linux</li>
+                <li>Machine Learning</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>EShop</strong><br>
+                Online Bookstore · ASP.NET Core | HTML/CSS/JavaScript<br>
+                <a href="https://github.com/anhbaonguyenle/EShop">Link Project (github repository)</a>
+                <p>EShop is a web-based bookstore built with ASP.NET MVC, designed to provide users with a smooth and secure experience for browsing, purchasing, and managing books. The system supports user authentication, shopping cart functionality, order management. </p>
+                <p>This project is powered by SQL Server for robust data management and follows the MVC pattern for clean separation of concerns. Ideal for learning modern .NET web development and deploying scalable eCommerce applications.</p>
+            </li>
+            <li>
+                <strong>Blackjack-game</strong><br>
+                Blackjack-game· C#| Unity<br>
+                <a href="https://github.com/anhbaonguyenle/Blackjack-game">Link Project (github repository)</a>
+                <p>Blackjack-game is a classic card game implemented in C# using the Unity game engine. It features a user-friendly interface, realistic card animations, and a complete game logic system.</p>
+                <p>This project demonstrates proficiency in C# programming, Unity development, and game design principles. It includes features such as player vs dealer gameplay, betting mechanics, and win/lose conditions.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+
+        <article class="publication-item">
+            <h3>Fake Face Recognition on Images Generated by Various Deepfake Tools</h3>
+            <p>
+                This paper evaluates the effectiveness of popular deepfake generation tools
+                (Deepfakes, Face2Face, Face Swap, and Neural Textures) in deceiving deep learning–based
+                fake/real face recognition systems. Experimental results indicate that Neural Textures
+                produces the most challenging fake faces for detection algorithms. Additionally, the
+                study proposes a lightweight deep learning architecture that achieves improved detection
+                performance with fewer parameters.
+            </p>
+            <p>
+                <a href="https://link.springer.com/chapter/10.1007/978-981-97-0669-3_5" target="_blank">
+                    View publication on Springer
+                </a>
+            </p>
+        </article>
+
+        <article class="publication-item">
+            <h3>An Approach for Object Recognition in Videos for Vocabulary Extraction</h3>
+            <p>
+                This study presents a method to support English vocabulary learning through real-time
+                object recognition in videos, images, and live streams. The approach utilizes YOLO-based
+                deep learning architectures to detect objects and generate related vocabulary, meanings,
+                and example sentences. Experimental results achieve an mAP of 55.6 on a dataset of
+                2,786 images across 59 classes, demonstrating practical applicability for language learning.
+            </p>
+            <p>
+                <a href="https://link.springer.com/chapter/10.1007/978-3-031-59462-5_3" target="_blank">
+                    View publication on Springer
+                </a>
+            </p>
+        </article>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            Email: anhlenguyenbaoanh@gmail.com <br>
+            GitHub: <a href="https://github.com/anhbaonguyenle">github.com/anhbaonguyenle</a><br>
+            LinkedIn: <a href="www.linkedin.com/in/nguyenbaoanhle">linkedin.com/in/nguyenbaoanhle/</a>
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2024 Le Nguyen Bao Anh</p>
+</footer>
+
 </body>
 </html>
