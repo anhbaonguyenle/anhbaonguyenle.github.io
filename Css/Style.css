@@ -224,6 +224,7 @@ section > h2::after {
     border-radius: var(--radius-lg);
     padding: 1.75rem;
     transition: all var(--transition-smooth);
+    text-align: justify;
 }
 
 #about p:hover {
