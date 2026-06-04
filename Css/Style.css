@@ -1075,9 +1075,9 @@ section:nth-child(6) { animation-delay: 0.6s; }
     }
 
     .hero {
-        padding: 0 0 4px;
-        border-bottom: 2px solid #333;
-        margin-bottom: 6px;
+        padding: 0 0 4px !important;
+        border-bottom: 2px solid #333 !important;
+        margin-bottom: 6px !important;
     }
 
     .hero::before {
@@ -1092,43 +1092,26 @@ section:nth-child(6) { animation-delay: 0.6s; }
         margin-bottom: 2px;
     }
 
-    .subtitle {
-        font-size: 8pt;
+    .hero-subtitle {
+        font-size: 8pt !important;
         color: #444 !important;
+        margin-bottom: 4px !important;
+        opacity: 1 !important;
+        transform: none !important;
     }
 
     .typed-cursor {
         display: none !important;
     }
 
-    .hero-card {
-        opacity: 1 !important;
-        transform: none !important;
-        animation: none !important;
-        border: none !important;
-        padding: 2px 0;
-        box-shadow: none !important;
-        backdrop-filter: none !important;
-    }
-
-    .hero-cards-row {
-        gap: 4px;
-    }
-
-    .hero-card h3 {
-        color: #000 !important;
-        font-size: 8pt;
-    }
-
-    .hero-card p {
-        font-size: 8pt;
-        color: #333 !important;
+    .hero-cards {
+        display: none !important;
     }
 
     .container {
-        max-width: 100%;
-        padding: 0;
-        margin: 0;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
     section {
@@ -1294,14 +1277,7 @@ section:nth-child(6) { animation-delay: 0.6s; }
     }
 
     a[href]::after {
-        content: " (" attr(href) ")";
-        font-size: 7pt;
-        color: #666 !important;
-    }
-
-    .navbar a[href]::after,
-    #projects a[href]::after {
-        content: "";
+        content: none !important;
     }
 
     @page {
