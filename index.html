@@ -49,8 +49,24 @@
 </nav>
 
 <header class="hero">
-    <h1>Le Nguyen Bao Anh</h1>
-    <p class="subtitle">WPF Developer · Web Developer · C#, .NET, ASP.NET, JavaScript, PHP</p>
+    <h1><span id="typed-name"></span><span class="typed-cursor" id="name-cursor">|</span></h1>
+    <p class="hero-subtitle" id="hero-subtitle">Software Developer</p>
+    <div class="hero-cards" id="hero-cards">
+        <div class="hero-cards-row">
+            <div class="hero-card" id="hero-card-1">
+                <h3>⚡ Tech Stack</h3>
+                <p>C# · JavaScript · Python · HTML5 · CSS3</p>
+            </div>
+            <div class="hero-card" id="hero-card-2">
+                <h3>🛠 Frameworks</h3>
+                <p>.NET · ASP.NET · WPF · Flask · React · Entity Framework</p>
+            </div>
+        </div>
+        <div class="hero-card hero-card-full" id="hero-card-3">
+            <h3>🎯 Hobbies</h3>
+            <p>🎮 Game · 🎵 Music · 📚 Read Book</p>
+        </div>
+    </div>
 </header>
 
 <main class="container">
@@ -295,6 +311,47 @@ function generateResumePDF() {
             applyTheme(e.matches ? 'light' : 'dark');
         }
     });
+})();
+
+(function() {
+    var name = 'Le Nguyen Bao Anh';
+    var nameEl = document.getElementById('typed-name');
+    var cursorEl = document.getElementById('name-cursor');
+    var subtitleEl = document.getElementById('hero-subtitle');
+    var cards = [
+        document.getElementById('hero-card-1'),
+        document.getElementById('hero-card-2'),
+        document.getElementById('hero-card-3')
+    ];
+    var charIndex = 0;
+    var typeSpeed = 90;
+
+    function typeName() {
+        if (charIndex < name.length) {
+            charIndex++;
+            nameEl.textContent = name.substring(0, charIndex);
+            setTimeout(typeName, typeSpeed);
+        } else {
+            setTimeout(function() {
+                cursorEl.classList.add('hidden');
+                subtitleEl.classList.add('visible');
+                setTimeout(function() {
+                    revealCards(0);
+                }, 500);
+            }, 400);
+        }
+    }
+
+    function revealCards(index) {
+        if (index < cards.length) {
+            cards[index].classList.add('visible');
+            setTimeout(function() {
+                revealCards(index + 1);
+            }, 300);
+        }
+    }
+
+    setTimeout(typeName, 600);
 })();
 </script>
 
