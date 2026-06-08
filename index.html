@@ -273,6 +273,11 @@
     <p>© 2026 Le Nguyen Bao Anh</p>
 </footer>
 
+<button id="back-to-top-btn" aria-label="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+</button>
 
 <script>
 function generateResumePDF() {
@@ -382,6 +387,25 @@ function generateResumePDF() {
             menuToggle.classList.remove('active');
             navMenu.classList.remove('open');
         }
+    });
+})();
+
+(function() {
+    var backToTopBtn = document.getElementById('back-to-top-btn');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
+    });
+
+    backToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
 })();
 </script>

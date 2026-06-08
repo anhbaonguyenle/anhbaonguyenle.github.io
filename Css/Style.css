@@ -1059,6 +1059,47 @@ section:nth-child(6) { animation-delay: 0.6s; }
     background: var(--scrollbar-thumb-hover);
 }
 
+#back-to-top-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--gradient-hero);
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all var(--transition-smooth);
+    z-index: 99;
+}
+
+#back-to-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#back-to-top-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+}
+
+#back-to-top-btn svg {
+    transition: transform var(--transition-fast);
+}
+
+#back-to-top-btn:hover svg {
+    transform: translateY(-2px);
+}
+
 @media print {
     *, *::before, *::after {
         background: transparent !important;
